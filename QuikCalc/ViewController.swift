@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 /*
     1. User presses digit - number appended to string (up to 10 digits)
@@ -34,12 +35,18 @@ class ViewController: UIViewController {
     var firstNumber:Double = 0;
     var secondNumber:Double = 0;
     var answer:Double = 0;
+    var currentTotal:Int = 0;
     var operation:String?
+    var kickSound: SystemSoundID!
+    var snareSound: SystemSoundID!
+    var clapSound: SystemSoundID!
+    var hihatSound: SystemSoundID!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        displayLabel.text = "\(answer)"
+        displayLabel.text = "\(currentTotal)"
+        createSounds()
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,6 +61,26 @@ class ViewController: UIViewController {
     
         Is this it?
     */
+    func createSounds(){
+        var soundID: SystemSoundID = 0
+        var soundURL = CFBundleCopyResourceURL(CFBundleGetMainBundle(), "kick", "wav", nil)
+        AudioServicesCreateSystemSoundID(soundURL, &soundID)
+        kickSound = soundID
+        soundID++
+        soundURL = CFBundleCopyResourceURL(CFBundleGetMainBundle(), "snare", "wav", nil)
+        AudioServicesCreateSystemSoundID(soundURL, &soundID)
+        snareSound = soundID
+        soundID++
+        soundURL = CFBundleCopyResourceURL(CFBundleGetMainBundle(), "clap", "wav", nil)
+        AudioServicesCreateSystemSoundID(soundURL, &soundID)
+        clapSound = soundID
+        soundID++
+        soundURL = CFBundleCopyResourceURL(CFBundleGetMainBundle(), "hihat", "wav", nil)
+        AudioServicesCreateSystemSoundID(soundURL, &soundID)
+        hihatSound = soundID
+        soundID++
+    }
+    
     @IBAction func pressNumber(sender: AnyObject) {
         
         if let digit = (sender as UIButton).titleLabel?.text {
@@ -133,10 +160,10 @@ class ViewController: UIViewController {
         Reset all values
     */
     @IBAction func clearOp (sender: AnyObject) {
-        answer = 0
+        currentTotal = 0
         operation = nil
         
-        displayLabel.text = "\(answer)"
+        displayLabel.text = "\(currentTotal)"
     }
     
     /*
@@ -154,6 +181,22 @@ class ViewController: UIViewController {
         }
         
         displayLabel.text = "\(display)"
+    }
+    @IBAction func playKick(sender: AnyObject) {
+        println("Playing Kick Sound")
+        AudioServicesPlaySystemSound(kickSound)
+    }
+    @IBAction func playSnare(sender: AnyObject) {
+        println("Playing Snare Sound")
+        AudioServicesPlaySystemSound(snareSound)
+    }
+    @IBAction func playClap(sender: AnyObject) {
+        println("Playing Clap Sound")
+        AudioServicesPlaySystemSound(clapSound)
+    }
+    @IBAction func playHihat(sender: AnyObject) {
+        println("Playing Hihat Sound")
+        AudioServicesPlaySystemSound(hihatSound)
     }
     
 }

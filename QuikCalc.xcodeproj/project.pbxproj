@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E255AC21A9FDECE0073DAA5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E255AC11A9FDECE0073DAA5 /* AudioToolbox.framework */; };
+		2E255ACD1A9FE4EA0073DAA5 /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2E255ACC1A9FE4EA0073DAA5 /* clap.wav */; };
+		2E255ACF1A9FE4F20073DAA5 /* hihat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2E255ACE1A9FE4F20073DAA5 /* hihat.wav */; };
+		2E255AD11A9FE4F80073DAA5 /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2E255AD01A9FE4F80073DAA5 /* kick.wav */; };
+		2E255AD31A9FE4FD0073DAA5 /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2E255AD21A9FE4FD0073DAA5 /* snare.wav */; };
 		FF07DD981A8CD3E700191935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07DD971A8CD3E700191935 /* AppDelegate.swift */; };
 		FF07DD9A1A8CD3E700191935 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07DD991A8CD3E700191935 /* ViewController.swift */; };
 		FF07DD9D1A8CD3E700191935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF07DD9B1A8CD3E700191935 /* Main.storyboard */; };
@@ -26,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E255AC11A9FDECE0073DAA5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2E255ACC1A9FE4EA0073DAA5 /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clap.wav; sourceTree = "<group>"; };
+		2E255ACE1A9FE4F20073DAA5 /* hihat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hihat.wav; sourceTree = "<group>"; };
+		2E255AD01A9FE4F80073DAA5 /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kick.wav; sourceTree = "<group>"; };
+		2E255AD21A9FE4FD0073DAA5 /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare.wav; sourceTree = "<group>"; };
 		FF07DD921A8CD3E700191935 /* QuikCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuikCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF07DD961A8CD3E700191935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF07DD971A8CD3E700191935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E255AC21A9FDECE0073DAA5 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +67,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E255AC31A9FE4580073DAA5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2E255AD21A9FE4FD0073DAA5 /* snare.wav */,
+				2E255AD01A9FE4F80073DAA5 /* kick.wav */,
+				2E255ACE1A9FE4F20073DAA5 /* hihat.wav */,
+				2E255ACC1A9FE4EA0073DAA5 /* clap.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		FF07DD891A8CD3E700191935 = {
 			isa = PBXGroup;
 			children = (
+				2E255AC31A9FE4580073DAA5 /* Sounds */,
+				2E255AC11A9FDECE0073DAA5 /* AudioToolbox.framework */,
 				FF07DD941A8CD3E700191935 /* QuikCalc */,
 				FF07DDAA1A8CD3E800191935 /* QuikCalcTests */,
 				FF07DD931A8CD3E700191935 /* Products */,
@@ -192,8 +216,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E255AD11A9FE4F80073DAA5 /* kick.wav in Resources */,
+				2E255ACD1A9FE4EA0073DAA5 /* clap.wav in Resources */,
 				FF07DD9D1A8CD3E700191935 /* Main.storyboard in Resources */,
 				FF07DDA21A8CD3E700191935 /* LaunchScreen.xib in Resources */,
+				2E255AD31A9FE4FD0073DAA5 /* snare.wav in Resources */,
+				2E255ACF1A9FE4F20073DAA5 /* hihat.wav in Resources */,
 				FF07DD9F1A8CD3E700191935 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

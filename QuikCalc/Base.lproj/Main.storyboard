@@ -26,6 +26,7 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="playKick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xf4-Xk-wHd"/>
                                     <action selector="pressNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5uv-x4-KdT"/>
                                 </connections>
                             </button>
@@ -38,6 +39,7 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="playKick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Xxj-PJ-wXD"/>
                                     <action selector="pressNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CyW-ho-8at"/>
                                 </connections>
                             </button>
@@ -50,6 +52,7 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="playKick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bau-ys-SZJ"/>
                                     <action selector="pressNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="r5I-5b-E5x"/>
                                 </connections>
                             </button>
@@ -62,6 +65,7 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="playKick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lYA-TL-F0Y"/>
                                     <action selector="pressNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bB6-W2-nOa"/>
                                 </connections>
                             </button>
@@ -74,6 +78,7 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="playKick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z6F-oo-xNI"/>
                                     <action selector="pressNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ijw-0b-zGY"/>
                                 </connections>
                             </button>
@@ -86,6 +91,7 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="playKick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="63d-iS-4ZU"/>
                                     <action selector="pressNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wKe-Cj-OuP"/>
                                 </connections>
                             </button>
@@ -98,6 +104,7 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="playKick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vzz-JS-U1d"/>
                                     <action selector="pressNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uVy-eU-NFn"/>
                                 </connections>
                             </button>
@@ -115,6 +122,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="clearOp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="73t-81-kYg"/>
+                                    <action selector="playSnare:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="N2W-Im-4to"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY2-kF-ph4">
@@ -129,6 +137,7 @@
                                     <rect key="frame" x="235" y="165" width="65" height="45"/>
                                 </variation>
                                 <connections>
+                                    <action selector="playClap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CVh-On-UhT"/>
                                     <action selector="pressOperator:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WzN-c2-XAd"/>
                                 </connections>
                             </button>
@@ -141,6 +150,7 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="playKick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xoJ-vx-UZK"/>
                                     <action selector="pressNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fdl-BX-MHi"/>
                                 </connections>
                             </button>
@@ -154,6 +164,7 @@
                                 </state>
                                 <connections>
                                     <action selector="equalsOp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fQi-vP-RmJ"/>
+                                    <action selector="playHihat:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RyE-rO-2FT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj6-5P-043">
@@ -170,6 +181,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="deleteOp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LFL-wM-OCm"/>
+                                    <action selector="playSnare:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WyF-c9-IWl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5e-Nu-aSm">
@@ -184,6 +196,7 @@
                                     <rect key="frame" x="308" y="165" width="65" height="45"/>
                                 </variation>
                                 <connections>
+                                    <action selector="playClap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rVo-M0-UAJ"/>
                                     <action selector="pressOperator:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6TT-Zk-vgx"/>
                                 </connections>
                             </button>
@@ -210,6 +223,7 @@
                                     <rect key="frame" x="308" y="218" width="65" height="45"/>
                                 </variation>
                                 <connections>
+                                    <action selector="playClap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QkG-zL-1LD"/>
                                     <action selector="pressOperator:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="slC-yh-zjd"/>
                                 </connections>
                             </button>
@@ -225,6 +239,7 @@
                                     <rect key="frame" x="16" y="271" width="65" height="45"/>
                                 </variation>
                                 <connections>
+                                    <action selector="playKick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bWM-E4-9MX"/>
                                     <action selector="pressNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ohR-Ji-WVn"/>
                                 </connections>
                             </button>
@@ -283,19 +298,8 @@
                                     <rect key="frame" x="235" y="218" width="65" height="45"/>
                                 </variation>
                                 <connections>
+                                    <action selector="playClap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uba-04-qus"/>
                                     <action selector="pressOperator:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hQw-Fe-45G"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIG-zV-PIj">
-                                <rect key="frame" x="16" y="112" width="65" height="45"/>
-                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="7">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="pressNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yq8-ld-pF0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5J-eP-ei2">
@@ -307,7 +311,21 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="playKick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qRQ-rv-aJs"/>
                                     <action selector="pressNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Skk-tN-prZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIG-zV-PIj">
+                                <rect key="frame" x="16" y="112" width="65" height="45"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playKick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ahS-8A-i02"/>
+                                    <action selector="pressNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yq8-ld-pF0"/>
                                 </connections>
                             </button>
                         </subviews>
