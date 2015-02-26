@@ -28,12 +28,13 @@ class ViewController: UIViewController {
     
     // does this require a limiter? So as to only display a certain number of characters?
     @IBOutlet weak var displayLabel: UILabel!
+    //displayLabel = [displayLabel substringToIndex:8];
     // or should it be done in InterfaceBuilder?
     
     var currentTotal:Int = 0;
-    var operation:String?
     var firstNumber: Int = 0;
     var secondNumber: Int = 0;
+    var operation:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
