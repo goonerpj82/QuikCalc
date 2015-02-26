@@ -31,15 +31,15 @@ class ViewController: UIViewController {
     //displayLabel = [displayLabel substringToIndex:8];
     // or should it be done in InterfaceBuilder?
     
-    var currentTotal:Int = 0;
-    var firstNumber: Int = 0;
-    var secondNumber: Int = 0;
+    var firstNumber:Double = 0;
+    var secondNumber:Double = 0;
+    var answer:Double = 0;
     var operation:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        displayLabel.text = "\(currentTotal)"
+        displayLabel.text = "\(answer)"
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +57,9 @@ class ViewController: UIViewController {
     @IBAction func pressNumber(sender: AnyObject) {
         
         if let digit = (sender as UIButton).titleLabel?.text {
+            if((NSString(string: displayLabel.text!)).doubleValue == answer){
+                displayLabel.text! = "0"
+            }
             if(displayLabel.text! != "0"){
                 displayLabel.text! += digit
            }
@@ -72,7 +75,7 @@ class ViewController: UIViewController {
         Is this it?
     */
     @IBAction func pressOperator(sender: AnyObject) {
-        firstNumber = (displayLabel.text!).toInt()!
+        firstNumber = (NSString(string: displayLabel.text!)).doubleValue
         //NSLog("%d", firstNumber)
         
         let o:String! = (sender as UIButton).titleLabel?.text
@@ -103,25 +106,26 @@ class ViewController: UIViewController {
         Perform calculation and display result
     */
     @IBAction func equalsOp (sender: AnyObject) {
-        secondNumber = (displayLabel.text!).toInt()!
+        secondNumber = (NSString(string: displayLabel.text!)).doubleValue
+        //secondNumber = (displayLabel.text!).toInt()!
         //NSLog("%d", secondNumber)
         if operation == "+"
         {
-            currentTotal = firstNumber + secondNumber
+            answer = firstNumber + secondNumber
         }
         if operation == "-"
         {
-            currentTotal = firstNumber - secondNumber
+            answer = firstNumber - secondNumber
         }
         if operation == "x"
         {
-            currentTotal = firstNumber * secondNumber
+            answer = firstNumber * secondNumber
         }
         else if operation == "/"
         {
-            currentTotal = firstNumber / secondNumber
+            answer = firstNumber / secondNumber
         }
-        displayLabel.text = "\(currentTotal)"
+        displayLabel.text = "\(answer)"
         //NSLog("%d", currentTotal)
     }
     
@@ -129,10 +133,10 @@ class ViewController: UIViewController {
         Reset all values
     */
     @IBAction func clearOp (sender: AnyObject) {
-        currentTotal = 0
+        answer = 0
         operation = nil
         
-        displayLabel.text = "\(currentTotal)"
+        displayLabel.text = "\(answer)"
     }
     
     /*

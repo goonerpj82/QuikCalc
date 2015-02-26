@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QuikCalc/ViewController.swift"
-            timestampString = "446656260.833115"
+            timestampString = "446676854.476222"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "equalsOp(_:)"
             landmarkType = "5">
          </BreakpointContent>
